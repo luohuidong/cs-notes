@@ -5,6 +5,10 @@ export default defineConfig({
   title: "Notes",
 
   themeConfig: {
+    search: {
+      provider: "local",
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [],
 
