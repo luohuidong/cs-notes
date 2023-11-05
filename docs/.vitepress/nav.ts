@@ -5,7 +5,7 @@ const nav: DefaultTheme.NavItem[] = [
     text: "Frontend",
     items: [
       { text: "JavaScript 对象", link: "/frontend/object/object-property" },
-      { text: "Web Components", link: "/frontend/web-components/custom-element" },
+      { text: "Web Components", link: "/frontend/web-components/custom-element/create" },
     ],
   },
   {
