@@ -5,14 +5,17 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "npm run build:sidebar && vitepress dev docs",
+    "dev:sidebar": "node ./scripts/generate-sidebar-watch.js",
     "build": "vitepress build docs",
+    "build:sidebar": "node ./scripts/generate-sidebar.js",
     "preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "js-yaml": "^4.1.0",
     "vitepress": "^1.0.0-rc.24"
   }
 }
