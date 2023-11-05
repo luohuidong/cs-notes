@@ -1,4 +1,0 @@
-- text: Web Components
-  items:
-    - { text: Custom element, link: ./custom-element }
-    - { text: Shadow DOM, link: ./shadow-dom }
