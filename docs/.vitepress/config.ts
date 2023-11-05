@@ -1,5 +1,13 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, type DefaultTheme } from "vitepress";
+import fs from "node:fs";
+import yaml from "js-yaml";
+
 import sidebar from "./sidebar";
+
+const navurl = new URL("./nav.yml", import.meta.url).pathname;
+const nav = yaml.load(
+  fs.readFileSync(navurl, "utf8")
+) as DefaultTheme.NavItem[];
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,12 +19,7 @@ export default defineConfig({
     },
 
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      {
-        text: "DOM 与 Web components",
-        link: "/dom-web-components/custom-element",
-      },
-    ],
+    nav,
 
     sidebar,
 
