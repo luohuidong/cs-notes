@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "npm run build:sidebar && vitepress dev docs",
     "dev:sidebar": "node ./scripts/generate-sidebar-watch.js",
-    "build": "vitepress build docs",
+    "build": "npm run build:sidebar && vitepress build docs",
     "build:sidebar": "node ./scripts/generate-sidebar.js",
     "preview": "vitepress preview docs"
   },
