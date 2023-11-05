@@ -41,25 +41,18 @@ export class GenerateSidebar {
   };
 
   generate() {
-    const sidebarConfigFilePaths = this.#recursiveGetSidebarConfigFilePaths(
-      this.#rootDir
-    );
+    const sidebarConfigFilePaths = this.#recursiveGetSidebarConfigFilePaths(this.#rootDir);
 
     const sidebar = {};
     // 读取所有
     sidebarConfigFilePaths.forEach((sidebarConfigFilePath) => {
-      const config = yaml.load(
-        fs.readFileSync(sidebarConfigFilePath, { encoding: "utf8" })
-      );
+      const config = yaml.load(fs.readFileSync(sidebarConfigFilePath, { encoding: "utf8" }));
 
       sidebarConfigFilePath = sidebarConfigFilePath.replace("docs", "");
       const result = path.parse(sidebarConfigFilePath);
       sidebar[result.dir] = this.#addLinkPrefix(config, result.dir);
     });
 
-    fs.writeFileSync(
-      "./docs/.vitepress/sidebar.ts",
-      `export default ${JSON.stringify(sidebar)}`
-    );
+    fs.writeFileSync("./docs/.vitepress/sidebar.ts", `export default ${JSON.stringify(sidebar, null, 2)}`);
   }
 }
