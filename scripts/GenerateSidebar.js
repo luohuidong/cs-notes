@@ -6,19 +6,20 @@ import { recursiveFolder, formatPath } from './utils/index.js'
 
 export class GenerateSidebar {
   #rootDir = 'docs'
-  #sidebarConfigFilePaths = []
 
   /** 递归获取 docs 目录下所有 sidebar.yml 文件的路径 */
-  #recursiveGetSidebarConfigFilePaths = (dirPath) => {
+  #allSidebarConfigFilePaths = (dirPath) => {
+    const sidebarConfigFilePaths = []
+
     recursiveFolder(dirPath, ({ itemsPath, isDirectory }) => {
       if (isDirectory) return
 
       if (path.parse(itemsPath).base === 'sidebar.yml') {
-        this.#sidebarConfigFilePaths.push(itemsPath)
+        sidebarConfigFilePaths.push(itemsPath)
       }
     })
 
-    return this.#sidebarConfigFilePaths
+    return sidebarConfigFilePaths
   }
 
   #addLinkPrefix = (items, dir) => {
@@ -37,13 +38,30 @@ export class GenerateSidebar {
     return items
   }
 
+  /**
+   * 递归增加 collapsed 属性
+   * @param {array} config
+   */
+  #addCollapased = (config) => {
+    config.forEach((item) => {
+      if (item.items) {
+        item.collapsed = false
+        this.#addCollapased(item.items)
+      }
+    })
+  }
+
   generate() {
-    const sidebarConfigFilePaths = this.#recursiveGetSidebarConfigFilePaths(this.#rootDir)
+    const sidebarConfigFilePaths = this.#allSidebarConfigFilePaths(this.#rootDir)
 
     const sidebar = {}
-    // 读取所有
+    // 读取所有 sidebar 配置文件
     sidebarConfigFilePaths.forEach((sidebarConfigFilePath) => {
       const config = yaml.load(fs.readFileSync(sidebarConfigFilePath, { encoding: 'utf8' }))
+      config.forEach((item) => {
+        // 二级菜单默认展开
+        this.#addCollapased(item.items)
+      })
 
       sidebarConfigFilePath = sidebarConfigFilePath.replace('docs', '')
       const result = path.parse(sidebarConfigFilePath)
