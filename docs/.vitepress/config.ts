@@ -1,15 +1,15 @@
-import { defineConfig } from "vitepress";
+import { defineConfig } from 'vitepress'
 
-import nav from "./nav";
-import sidebar from "./sidebar";
+import nav from './nav'
+import sidebar from './sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Notes",
+  title: 'Notes',
 
   themeConfig: {
     search: {
-      provider: "local",
+      provider: 'local',
     },
 
     // https://vitepress.dev/reference/default-theme-config
@@ -17,6 +17,6 @@ export default defineConfig({
 
     sidebar,
 
-    socialLinks: [{ icon: "github", link: "https://github.com/luohuidong/website-notes" }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/luohuidong/website-notes' }],
   },
-});
+})
