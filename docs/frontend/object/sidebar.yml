@@ -2,5 +2,6 @@
   items:
     - { text: 对象, link: ./object-property }
     - { text: 对象合并, link: ./object-merge }
-    - { text: 对象相等判断, link: ./object-compare }
+    - { text: 对象相等判断, link: ./object-is }
+    - { text: 增强的对象语法, link: ./object-enhance }
     - { text: 类, link: ./class }
