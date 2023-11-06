@@ -45,4 +45,32 @@ Object.assign(dest, src);
 console.log(dest); // { set a(val) {...} }
 ```
 
-另外需要注意 `Object.assign()` 并不能在两个对象间转移获取函数和设置函数。
+使用 `Object.assign()` 有几点需要注意：
+
+1. 无法在两个对象间转移获取函数和设置函数。
+2. 如果赋值期间出错，则操作会中止并退出，同时抛出错误。但 `Object.assign()` 没有回滚之前赋值的概念，因此有可能只会完成部分复制。
+
+```js
+let dest, src, result;
+
+/**
+ * 错误处理
+ */
+dest = {};
+src = {
+  a: "foo",
+  get b() {
+    // Object.assign()在调用这个获取函数时会抛出错误
+    throw new Error();
+  },
+  c: "bar",
+};
+
+try {
+  Object.assign(dest, src);
+} catch (e) {}
+
+// Object.assign()没办法回滚已经完成的修改
+// 因此在抛出错误之前，目标对象上已经完成的修改会继续存在：
+console.log(dest); // { a: foo }
+```
