@@ -1,11 +1,12 @@
 {
   "name": "cs-notes",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "npm run build:sidebar && vitepress dev docs",
-    "dev:sidebar": "ts-node ./scripts/generate-sidebar-watch.ts",
+    "dev:sidebar": "tsx ./scripts/generate-sidebar-watch.ts",
     "build": "npm run build:sidebar && vitepress build docs",
-    "build:sidebar": "ts-node ./scripts/generate-sidebar.ts",
+    "build:sidebar": "tsx ./scripts/generate-sidebar.ts",
     "preview": "vitepress preview docs"
   },
   "keywords": [],
@@ -16,8 +17,7 @@
     "@types/node": "^20.8.10",
     "js-yaml": "^4.1.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "ts-node": "^10.9.1",
-    "tslib": "^2.6.2",
+    "tsx": "^3.14.0",
     "typescript": "^5.2.2",
     "vitepress": "^1.0.0-rc.24"
   }

@@ -1,2 +1,2 @@
-export { recursiveFolder } from './recursiveFolder'
-export { formatPath } from './formatPath'
+export { recursiveFolder } from './recursiveFolder.js'
+export { formatPath } from './formatPath.js'

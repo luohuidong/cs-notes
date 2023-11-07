@@ -3,7 +3,7 @@ import path from 'node:path'
 import yaml from 'js-yaml'
 import type { DefaultTheme } from 'vitepress'
 
-import { recursiveFolder, formatPath } from './utils'
+import { recursiveFolder, formatPath } from './utils/index.js'
 
 export class GenerateSidebar {
   #rootDir = 'docs'
@@ -72,7 +72,7 @@ export class GenerateSidebar {
     })
 
     fs.writeFileSync(
-      path.resolve(__dirname, '..', 'docs', '.vitepress', 'sidebar.ts'),
+      path.resolve('docs', '.vitepress', 'sidebar.ts'),
       `export default ${JSON.stringify(sidebar, null, 2)}`
     )
   }

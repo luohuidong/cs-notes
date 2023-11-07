@@ -1,3 +1,3 @@
-import { GenerateSidebar } from './GenerateSidebar'
+import { GenerateSidebar } from './GenerateSidebar.js'
 
 new GenerateSidebar().generate()

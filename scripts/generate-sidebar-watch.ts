@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import { GenerateSidebar } from './GenerateSidebar'
+import { GenerateSidebar } from './GenerateSidebar.js'
 
 fs.watch('docs', { recursive: true }, (eventType, filename) => {
   if (!filename) return
