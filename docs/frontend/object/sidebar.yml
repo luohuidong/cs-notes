@@ -4,4 +4,5 @@
     - { text: 对象合并, link: ./object-merge }
     - { text: 对象相等判断, link: ./object-is }
     - { text: 增强的对象语法, link: ./object-enhance }
+    - { text: 对象解构, link: ./object-destructuring }
     - { text: 类, link: ./class }

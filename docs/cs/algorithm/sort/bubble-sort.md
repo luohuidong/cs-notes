@@ -6,7 +6,7 @@
 
 [冒泡排序的动画展示](https://algorithm-visualizer.org/brute-force/bubble-sort)
 
-![冒泡排序.png](https://cdn.luohuidong.cn/bubble-sort.svg)
+![冒泡排序.png](https://cdn.luohuidong.cn/bubble-sort.jpg)
 
 ## 代码实现
 
