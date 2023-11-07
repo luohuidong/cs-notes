@@ -9,6 +9,10 @@ const nav: DefaultTheme.NavItem[] = [
     ],
   },
   {
+    text: 'CS',
+    items: [{ text: '算法', link: '/cs/algorithm/sort/bubble-sort' }],
+  },
+  {
     text: 'Linux',
     items: [{ text: 'Shell Script', link: '/linux/shell-script/what-is-shell-script' }],
   },

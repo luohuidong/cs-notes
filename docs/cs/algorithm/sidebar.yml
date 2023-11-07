@@ -1,0 +1,5 @@
+- text: 算法
+  items:
+    - text: 排序
+      items:
+        - { text: 冒泡排序, link: ./sort/bubble-sort }
