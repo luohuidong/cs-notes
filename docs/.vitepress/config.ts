@@ -7,6 +7,10 @@ import sidebar from './sidebar'
 export default defineConfig({
   title: 'Notes',
 
+  markdown: {
+    math: true,
+  },
+
   themeConfig: {
     search: {
       provider: 'local',
