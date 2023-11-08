@@ -79,3 +79,90 @@ let person = {
 console.log(personName) // Matt
 console.log(personAge) // 27
 ```
+
+## 嵌套解构
+
+解构赋值可以使用嵌套解构，以匹配嵌套的属性：
+
+```js
+let person = {
+  name: 'Matt',
+  age: 27,
+  job: {
+    title: 'Software engineer',
+  },
+}
+// 声明title变量并将person.job.title的值赋给它
+let {
+  job: { title },
+} = person
+console.log(title) // Software engineer
+```
+
+在外层属性没有定义的情况下不能使用嵌套解构：
+
+```js
+let person = {
+  job: {
+    title: 'Software engineer',
+  },
+}
+let personCopy = {}
+
+// foo在源对象上是undefined
+;({
+  foo: { bar: personCopy.bar },
+} = person)
+// TypeError: Cannot destructure property 'bar' of 'undefined' or 'null'.
+
+// job在目标对象上是undefined
+;({
+  job: { title: personCopy.job.title },
+} = person)
+// TypeError: Cannot set property 'title' of undefined
+```
+
+## 部分解构
+
+如果一个解构表达式涉及多个赋值，开始的赋值成功而后面的赋值出错，则整个解构赋值只会完成一部分：
+
+```js
+let person = {
+  name: 'Matt',
+  age: 27,
+}
+let personName, personBar, personAge
+try {
+  // person.foo是undefined，因此会抛出错误
+  ;({
+    name: personName,
+    foo: { bar: personBar },
+    age: personAge,
+  } = person)
+} catch (e) {}
+console.log(personName, personBar, personAge)
+// Matt, undefined, undefined
+```
+
+## 函数参数解构赋值
+
+在函数参数列表中也可以进行解构赋值：
+
+```js
+let person = {
+  name: 'Matt',
+  age: 27,
+}
+function printPerson(foo, { name, age }, bar) {
+  console.log(name, age)
+}
+function printPerson2(foo, { name: personName, age: personAge }, bar) {
+  console.log(personName, personAge)
+}
+printPerson('1st', person, '2nd')
+// ['1st', { name: 'Matt', age: 27 }, '2nd']
+// 'Matt', 27
+printPerson2('1st', person, '2nd')
+// ['1st', { name: 'Matt', age: 27 }, '2nd']
+// 'Matt', 27
+```
