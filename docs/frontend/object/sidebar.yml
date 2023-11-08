@@ -1,8 +1,12 @@
-- text: JavaScript 对象
+- text: 对象
   items:
     - { text: 对象, link: ./object-property }
     - { text: 对象合并, link: ./object-merge }
     - { text: 对象相等判断, link: ./object-is }
     - { text: 增强的对象语法, link: ./object-enhance }
     - { text: 对象解构, link: ./object-destructuring }
-    - { text: 类, link: ./class }
+- text: 对象的创建、继承
+  items:
+    - { text: 对象创建（写作中）, link: ./object-create }
+    - { text: 对象继承（写作中）, link: ./object-inherit }
+    - { text: 类（写作中）, link: ./class }
