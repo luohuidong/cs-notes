@@ -4,6 +4,7 @@
     - { text: 认识 Shell 脚本, link: ./what-is-shell-script }
     - { text: Shell 脚本执行方式, link: ./script-run-method }
     - { text: Shell 脚本的跟踪与调试（写作中）, link: ./debugger }
+    - { text: 命令执行条件, link: ./exec-condition }
     - text: 管道
       items:
         - { text: 管道, link: ./pipe-redirection/pipe }
@@ -18,3 +19,6 @@
         - { text: 环境变量配置文件（写作中）, link: ./variable/env-variable-file }
         - { text: shell 脚本与定义变量, link: ./variable/special-variables }
         - { text: 位置变量（写作中）, link: ./variable/position-variable }
+    - { text: 数组（写作中）, link: ./array }
+    - { text: 转义与引用（写作中）, link: ./escaping-reference }
+    - { text: 特殊字符（写作中）, link: ./special-characters }
