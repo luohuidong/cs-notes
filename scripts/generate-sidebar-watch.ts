@@ -13,4 +13,6 @@ fs.watch('docs', { recursive: true }, (eventType, filename) => {
   }
 })
 
+new GenerateSidebar().generate()
+
 console.log('watching...')

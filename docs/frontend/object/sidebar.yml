@@ -1,12 +1,14 @@
 - text: 对象
   items:
-    - { text: 对象, link: ./object-property }
-    - { text: 对象合并, link: ./object-merge }
-    - { text: 对象相等判断, link: ./object-is }
-    - { text: 增强的对象语法, link: ./object-enhance }
-    - { text: 对象解构, link: ./object-destructuring }
-- text: 对象的创建、继承
+    - { text: 对象, link: ./base/object-property }
+    - { text: 对象合并, link: ./base/object-merge }
+    - { text: 对象相等判断, link: ./base/object-is }
+    - { text: 增强的对象语法, link: ./base/object-enhance }
+    - { text: 对象解构, link: ./base/object-destructuring }
+- text: 对象的创建与继承
   items:
-    - { text: 对象创建（写作中）, link: ./object-create }
-    - { text: 对象继承（写作中）, link: ./object-inherit }
-    - { text: 类（写作中）, link: ./class }
+    - { text: 概述, link: ./create-inherit/introduce }
+    - { text: 对象创建（写作中）, link: ./create-inherit/object-create }
+    - { text: 对象继承（写作中）, link: ./create-inherit/object-inherit }
+    - { text: 类（写作中）, link: ./create-inherit/class }
+    - { text: 装饰器（写作中）, link: ./create-inherit/decorator }
