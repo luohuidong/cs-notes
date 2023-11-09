@@ -8,7 +8,8 @@
 - text: 对象的创建与继承
   items:
     - { text: 概述, link: ./create-inherit/introduce }
-    - { text: 对象创建（写作中）, link: ./create-inherit/object-create }
+    - { text: 构造函数模式, link: ./create-inherit/object-constructor }
+    - { text: 原型模式（写作中）, link: ./create-inherit/object-prototype }
     - { text: 对象继承（写作中）, link: ./create-inherit/object-inherit }
     - { text: 类（写作中）, link: ./create-inherit/class }
     - { text: 装饰器（写作中）, link: ./create-inherit/decorator }
