@@ -84,6 +84,41 @@ console.log(Object.getPrototypeOf(person) === biped) // true
 
 ## 原型层级
 
-- 在通过对象访问属性时，会按照这个属性的名称开始搜索。搜索开始于对象实例本身。
-- 如果在这个实例上发现了给定的名称，则返回该名称对应的值。
-- 如果没有找到这个属性，则搜索会沿着指针进入原型对象，然后在原型对象上找到属性后，再返回对应的值。
+通过对象访问属性时，会按照这个属性的名称开始搜索。搜索开始于对象实例本身，如果在这个实例上发现了给定的名称，则返回该名称对应的值。如果没有找到这个属性，则搜索会沿着指针进入原型对象，然后在原型对象上找到属性后，再返回对应的值。
+
+虽然可以通过实例读取原型对象上的值，但不可能通过实例重写这些值。如果在实例上添加了一个与原型对象中同名的属性，那就会在实例上创建这个属性，这个属性会遮住原型对象上的属性。
+
+## `hasOwnProperty()` 与 in 操作符
+
+- 如果想确定某个属性是在实例上还是在原型对象上，可以使用 `hasOwnProperty()` 方法，这个方法会在属性存在于调用它的对象实例上时返回 `true`。
+- `in` 操作符会在通过对象能够访问给定属性时返回 `true`，无论该属性存在于实例中还是原型中。
+
+```js
+function Person() {}
+Person.prototype.name = 'Nicholas'
+Person.prototype.age = 29
+Person.prototype.job = 'Software Engineer'
+Person.prototype.sayName = function () {
+  alert(this.name)
+}
+
+let person1 = new Person()
+let person2 = new Person()
+
+console.log(person1.hasOwnProperty('name')) // false
+console.log('name' in person1) // true
+
+person1.name = 'Greg'
+console.log(person1.name) // Greg
+console.log(person1.hasOwnProperty('name')) // true
+console.log('name' in person1) // true
+
+console.log(person2.name) // Nicholas
+console.log(person2.hasOwnProperty('name')) // false
+console.log('name' in person2) // true
+
+delete person1.name
+console.log(person1.name) // Nicholas
+console.log(person1.hasOwnProperty('name')) // false
+console.log('name' in person1) // true
+```
