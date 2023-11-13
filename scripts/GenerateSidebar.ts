@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import yaml from 'js-yaml'
 import type { DefaultTheme } from 'vitepress'
+import _ from 'lodash'
 
 import { recursiveFolder, formatPath } from './utils/index.js'
 
@@ -75,5 +76,9 @@ export class GenerateSidebar {
       path.resolve('docs', '.vitepress', 'sidebar.ts'),
       `export default ${JSON.stringify(sidebar, null, 2)}`
     )
+
+    console.log(`${new Date().toLocaleString()} - regenerate sidebar`)
   }
+
+  debounceGenerate = _.debounce(this.generate, 100)
 }
