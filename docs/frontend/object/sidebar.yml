@@ -11,6 +11,6 @@
     - { text: 构造函数模式, link: ./create-inherit/object-constructor }
     - { text: 原型模式, link: ./create-inherit/object-prototype }
     - { text: 对象属性迭代, link: ./create-inherit/object-property-loop }
-    - { text: 对象继承（写作中）, link: ./create-inherit/object-inherit }
+    - { text: 原型链（写作中）, link: ./create-inherit/object-prototype-chain }
     - { text: 类（写作中）, link: ./create-inherit/class }
     - { text: 装饰器（写作中）, link: ./create-inherit/decorator }
