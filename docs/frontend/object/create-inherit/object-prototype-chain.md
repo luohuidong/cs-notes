@@ -33,3 +33,15 @@ console.log(instance.getSuperValue()) // true
 ## 默认原型
 
 任何函数的默认原型都是一个 `Object` 的实例，这意味着这个实例有一个内部指针指向 `Object.prototype`。这也是为什么自定义类型能够继承包括 `toString()`、`valueOf()` 在内的所有默认方法的原因。
+
+## 原型与继承关系
+
+原型与实例的关系可以通过两种方式来确定：
+
+1. 使用 `instanceof` 操作符：如果指定构造函数的原型出现在原型链中，则 `instanceof` 返回 `true`。
+2. 使用 `isPrototypeOf()` 方法：只要原型链中包含这个原型，则该方法返回 `true`。
+
+```js
+console.log(instance instanceof Object) // true
+console.log(Object.prototype.isPrototypeOf(instance)) // true
+```
