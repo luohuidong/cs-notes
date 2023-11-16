@@ -5,12 +5,15 @@
     - { text: 对象相等判断, link: ./base/object-is }
     - { text: 增强的对象语法, link: ./base/object-enhance }
     - { text: 对象解构, link: ./base/object-destructuring }
-- text: 对象的创建与继承
+- text: ES5 对象的创建与继承
   items:
     - { text: 概述, link: ./create-inherit/introduce }
     - { text: 构造函数模式, link: ./create-inherit/object-constructor }
     - { text: 原型模式, link: ./create-inherit/object-prototype }
     - { text: 对象属性迭代, link: ./create-inherit/object-property-loop }
     - { text: 原型链, link: ./create-inherit/object-prototype-chain }
-    - { text: 类（写作中）, link: ./create-inherit/class }
-    - { text: 装饰器（写作中）, link: ./create-inherit/decorator }
+- text: class
+  items:
+    - { text: 类, link: ./class/class }
+    - { text: 类-继承, link: ./class/class-extend }
+    - { text: 装饰器（写作中）, link: ./class/decorator }
