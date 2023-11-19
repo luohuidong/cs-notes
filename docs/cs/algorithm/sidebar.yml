@@ -3,3 +3,5 @@
     - text: 排序
       items:
         - { text: 冒泡排序, link: ./sort/bubble-sort }
+        - { text: 选择排序, link: ./sort/insertion-sort }
+        - { text: 插入排序, link: ./sort/selection-sort }
