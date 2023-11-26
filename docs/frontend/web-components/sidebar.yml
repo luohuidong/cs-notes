@@ -11,5 +11,7 @@
         - { text: shadow DOM 的作用, link: ./shadow-dom/introduce }
         - { text: 创建 shadow DOM, link: ./shadow-dom/create }
         - { text: JavaScript 与 CSS 隔离, link: ./shadow-dom/isolation }
-        - { text: Element.shadowRoot 以及 "mode" 选项, link: "./shadow-dom/shadow-root" }
+        - { text: Element.shadowRoot 以及 "mode" 选项, link: ./shadow-dom/shadow-root }
         - { text: 在 shadow DOM 中应用样式, link: ./shadow-dom/style }
+    - text: Template
+      link: ./template
