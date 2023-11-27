@@ -1,0 +1,5 @@
+- text: Shell 脚本编程
+  items:
+    - { text: 命令行代理, link: ./command-line-proxy }
+    - { text: APT 代理, link: ./apt-proxy }
+    - { text: SSH 免密登录, link: ./ssh-login }
