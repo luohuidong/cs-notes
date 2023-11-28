@@ -57,3 +57,9 @@ for more information
 2. 执行 `source ~/.bashrc` 来使配置生效
 
 这时候就能直接在命令行中通过输入 `nvim` 来启动 neovim 了。
+
+另外还可以通过设置别名的方式来启动 neovim：
+
+```bash
+alias v='nvim'
+```
