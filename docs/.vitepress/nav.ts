@@ -17,6 +17,7 @@ const nav: DefaultTheme.NavItem[] = [
     items: [
       { text: 'Linux', link: '/linux/linux/command-line-proxy' },
       { text: 'Shell Script', link: '/linux/shell-script/what-is-shell-script' },
+      { text: "Neovim", link: '/linux/neovim/install' },
     ],
   },
 ]

@@ -1,0 +1,3 @@
+- text: Neovim
+  items:
+    - { text: 'Neovim 下载与配置', link: ./install }
