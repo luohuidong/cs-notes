@@ -15,5 +15,5 @@
 - text: class
   items:
     - { text: 类, link: ./class/class }
-    - { text: 类-继承, link: ./class/class-extend }
+    - { text: 类-继承, link: ./class/class-inherit }
     - { text: 装饰器（写作中）, link: ./class/decorator }
