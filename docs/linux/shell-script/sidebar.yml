@@ -22,3 +22,19 @@
     - { text: 数组（写作中）, link: ./array }
     - { text: 转义与引用（写作中）, link: ./escaping-reference }
     - { text: 特殊字符（写作中）, link: ./special-characters }
+    - text: 判断
+      items:
+        - { text: test 命令, link: ./condition/test }
+        - { text: if 判断, link: ./condition/if }
+        - { text: case...esac 判断, link: ./condition/case }
+    - text: 循环
+      items:
+        - { text: for 循环, link: ./loop/for }
+        - { text: while 循环与 until 循环, link: ./loop/while-until }
+        - { text: break 和 continue, link: ./loop/break-continue }
+    - text: 函数
+      items:
+        - { text: 自定义函数, link: ./function/function }
+        - { text: 创建库, link: ./function/lib }
+        - { text: 数组变量与函数（写作中）, link: ./function/arr-args }
+        - { text: 系统函数库（写作中）, link: ./function/system-lib }
