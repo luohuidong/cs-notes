@@ -5,8 +5,8 @@
 - text: Neovim 插件
   items:
     - { text: 插件管理, link: ./plugin-management }
-    - { text: 主题（写作中）, link: ./plugin-theme }
-    - { text: 搜索（写作中）, link: . }
+    - { text: 主题, link: ./plugin-theme }
+    - { text: 搜索（写作中）, link: ./plugin-search }
     - { text: LSP（写作中）, link: . }
     - { text: 代码补全（写作中）, link: . }
     - { text: 添加侧边栏（写作中）, link: . }
