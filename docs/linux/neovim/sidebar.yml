@@ -1,6 +1,6 @@
 - text: Neovim
   items:
-    - { text: Neovim 下载与配置, link: ./install }
-    - { text: Neovim 配置文件, link: ./config }
-    - { text: Neo vim 插件, link: ./plugin }
-    - { text: LSP（写作中）, link: . }
+    - { text: 下载与配置, link: ./install }
+    - { text: 配置文件, link: ./config }
+    - { text: 插件, link: ./plugin }
+    - { text: LSP（写作中）, link: ./lsp }
