@@ -10,14 +10,17 @@ const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: 'CS',
-    items: [{ text: '算法', link: '/cs/algorithm/sort/bubble-sort' }],
+    items: [
+      { text: '数据结构', link: 'cs/data-structure/liner-list/stack' },
+      { text: '算法', link: '/cs/algorithm/sort/bubble-sort' },
+    ],
   },
   {
     text: 'Linux',
     items: [
       { text: 'Linux', link: '/linux/linux/command-line-proxy' },
       { text: 'Shell Script', link: '/linux/shell-script/what-is-shell-script' },
-      { text: "Neovim", link: '/linux/neovim/install' },
+      { text: 'Neovim', link: '/linux/neovim/install' },
     ],
   },
 ]
