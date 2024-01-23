@@ -13,6 +13,7 @@ const nav: DefaultTheme.NavItem[] = [
     items: [
       { text: '数据结构', link: 'cs/data-structure/liner-list/stack' },
       { text: '算法', link: '/cs/algorithm/sort/bubble-sort' },
+      { text: 'leetcode', link: '/cs/leetcode/' },
     ],
   },
   {
