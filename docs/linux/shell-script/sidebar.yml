@@ -17,7 +17,7 @@
         - { text: 自定义变量的引用与作用范围, link: ./variable/variable-ref-scoop }
         - { text: 环境变量（写作中）, link: ./variable/env-variable }
         - { text: 环境变量配置文件（写作中）, link: ./variable/env-variable-file }
-        - { text: shell 脚本与定义变量, link: ./variable/special-variables }
+        - { text: shell 脚本预定义变量, link: ./variable/special-variables }
         - { text: 位置变量（写作中）, link: ./variable/position-variable }
     - { text: 数组（写作中）, link: ./array }
     - { text: 转义与引用（写作中）, link: ./escaping-reference }
