@@ -1,5 +1,7 @@
 - text: leetcode
   items:
+    - text: 概览
+      link: index
     - text: 栈、队列
       items:
         - { text: 232. 用栈实现队列, link: ./232 }
