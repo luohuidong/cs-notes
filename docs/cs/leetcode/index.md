@@ -9,6 +9,13 @@
 - [1441. 用栈操作构建数组](https://leetcode.cn/problems/build-an-array-with-stack-operations/description/)
 - [155. 最小栈](https://leetcode.cn/problems/min-stack/description/)
 
+### 栈
+
+- [20. 有效的括号](https://u.geekbang.org/lesson/457?article=604704)
+- [32. 最长有效括号](https://u.geekbang.org/lesson/457?article=604706)
+
+### 队列
+
 ## 二分查找
 
 - [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/description/)
@@ -18,3 +25,7 @@
 
 - [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/description/)
 - [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/description/)
+
+## 动态规划
+
+- [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/description/)
