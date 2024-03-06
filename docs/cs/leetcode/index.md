@@ -13,6 +13,7 @@
 
 - [20. 有效的括号](https://u.geekbang.org/lesson/457?article=604704)
 - [32. 最长有效括号](https://u.geekbang.org/lesson/457?article=604706)
+- [636. 函数的独占时间](https://leetcode.cn/problems/exclusive-time-of-functions/description/)
 
 ### 队列
 
