@@ -30,3 +30,8 @@
 ## 动态规划
 
 - [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/description/)
+
+## 链表
+
+- [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/description/)
+- [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/description/)
