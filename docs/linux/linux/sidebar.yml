@@ -4,3 +4,4 @@
     - { text: APT 代理, link: ./apt-proxy }
     - { text: SSH 免密登录, link: ./ssh-login }
     - { text: Ubuntu 开发环境配置, link: ./dev-environment-ubuntu }
+    - { text: ZSH 配置, link: ./zsh }
