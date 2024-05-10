@@ -19,11 +19,12 @@ const nav: DefaultTheme.NavItem[] = [
     ],
   },
   {
-    text: 'Linux',
+    text: 'Tools',
     items: [
-      { text: 'Linux', link: '/linux/linux/command-line-proxy' },
-      { text: 'Shell Script', link: '/linux/shell-script/what-is-shell-script' },
-      { text: 'Neovim', link: '/linux/neovim/install' },
+      { text: 'Linux', link: '/tools/linux/command-line-proxy' },
+      { text: 'Shell Script', link: '/tools/shell-script/what-is-shell-script' },
+      { text: 'Neovim', link: '/tools/neovim/install' },
+      { text: 'Windows', link: 'tools/windows/dev-environment' },
     ],
   },
 ]
