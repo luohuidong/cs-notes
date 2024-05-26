@@ -19,7 +19,7 @@ wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod u+x nvim.appimage && ./nvim.appimage
 ```
 
-如果系统没有 FUSE，例如 windows 的 wsl 环境下，会展示以下错误：
+如果系统没有 [FUSE](https://github.com/AppImage/AppImageKit/wiki/FUSE)，例如 windows 的 wsl 环境下，会展示以下错误：
 
 ```bash
 dlopen(): error loading libfuse.so.2
