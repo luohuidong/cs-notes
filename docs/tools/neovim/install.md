@@ -1,6 +1,6 @@
 # neovim 下载与配置
 
-环境：wsl ubuntu
+环境：ubuntu 22.04
 
 ## 下载
 
@@ -69,3 +69,5 @@ alias v='nvim'
 在使用 Neovim 的时候，会发现有些字体乱码，原因是很多插件会使用字体图标。这时候就需要给系统安装 Nerd fonts 字体，Nerd fonts 将各种常见的 iconic fonts 打包到常用的字体里，这样在命令行里就支持显示这些图标了。
 
 下载 Nerd fonts 可以在 https://www.nerdfonts.com 这个网站下载。字体安装完毕之后，在终端工具中选择 Nerd fonts 字体即可展示正常。
+
+下载的字体可以放在 `~/.fonts` 目录中即可生效。
