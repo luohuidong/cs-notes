@@ -3,12 +3,9 @@
 Depending on your shell, and config, Open ~/.bashrc, ~/.bash_profile, or ~/.zshrc or wherever you set your shell variables, and set:
 
 ```shell
-export HTTP_PROXY="http://localhost:8888"
 export http_proxy="http://localhost:8888"
-export ALL_PROXY="http://localhost:8888"
-export all_proxy="http://localhost:8888"
-export HTTPS_PROXY="http://localhost:8888"
 export https_proxy="http://localhost:8888"
+export all_proxy="http://localhost:8888"
 ```
 
 参考资料：
