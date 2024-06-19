@@ -5,3 +5,4 @@
     - { text: SSH 免密登录, link: ./ssh-login }
     - { text: Ubuntu 开发环境配置, link: ./dev-environment-ubuntu }
     - { text: ZSH 配置, link: ./zsh }
+    - { text: tmux, link: ./tmux }
