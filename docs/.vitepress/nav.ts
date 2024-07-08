@@ -2,6 +2,15 @@ import type { DefaultTheme } from 'vitepress'
 
 const nav: DefaultTheme.NavItem[] = [
   {
+    text: 'CS',
+    items: [
+      { text: '数据结构', link: 'cs/data-structure/liner-list/stack' },
+      { text: '算法', link: '/cs/algorithm/sort/bubble-sort' },
+      { text: 'leetcode', link: '/cs/leetcode/' },
+      { text: '设计模式', link: '/cs/design-pattern/index' },
+    ],
+  },
+  {
     text: 'Frontend',
     items: [
       { text: 'Babel', link: '/frontend/babel/index' },
@@ -10,13 +19,8 @@ const nav: DefaultTheme.NavItem[] = [
     ],
   },
   {
-    text: 'CS',
-    items: [
-      { text: '数据结构', link: 'cs/data-structure/liner-list/stack' },
-      { text: '算法', link: '/cs/algorithm/sort/bubble-sort' },
-      { text: 'leetcode', link: '/cs/leetcode/' },
-      { text: '设计模式', link: '/cs/design-pattern/index' },
-    ],
+    text: 'Backend',
+    items: [{ text: 'MySQL', link: '/backend/mysql/index' }],
   },
   {
     text: 'Tools',
