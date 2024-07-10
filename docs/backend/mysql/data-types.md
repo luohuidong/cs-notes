@@ -14,8 +14,8 @@ MySQL 支持多种 SQL 数据类型，分别为：
 
 数据类型可分为：
 
+- [整数类型](https://dev.mysql.com/doc/refman/8.4/en/integer-types.html)
 - [定点数类型](https://dev.mysql.com/doc/refman/8.4/en/fixed-point-types.html)
-  - `DECIMAL`：该类型等价于 `DEC`、`NUMERIC`、`FIXED`。
 - [浮点数类型](https://dev.mysql.com/doc/refman/8.4/en/floating-point-types.html)
   - `FLOAT`
   - `DOUBLE`
@@ -24,20 +24,22 @@ MySQL 支持多种 SQL 数据类型，分别为：
 
 ### 整数类型
 
-- [整数类型](https://dev.mysql.com/doc/refman/8.4/en/integer-types.html) 有：
-  - `TINYINT`
-  - `SMALLINT`
-  - `MEDIUMINT`
-  - `INT`
-  - `BIGINT`
+整数类型有：`TINYINT`、`SMALLINT`、`MEDIUMINT`、`INT`、 `BIGINT`
 
 我们时常看到 `TINYINT(M)` 这种形式，对于整数来说，`M` 表示最小展示宽度。整形最大的展示宽度为 255。根据 [Numeric Type Attributes](https://dev.mysql.com/doc/refman/8.4/en/numeric-type-attributes.html) 所描述的，`M` 的大小并不影响值存储的范围。最小展示宽度主要影响应用程序针对宽度小于 `M` 的整数展示，应用程序可以通过在左侧填充空格来使得展示的数字达到指定的宽度。
 
 比较有意思的是 `BOOL` 类型也是数字类型，它等价于 `TINYINT(1)`。值为 0 表示 `false`，值为 1 表示 `true`。`BOOL` 类型在 MySQL 8.0.1 版本之前是一个别名，之后被废弃，不建议使用。
 
-### 定点数类型
+### 定点类型
 
-用于存储精确的小数值，常用于存储货币金额。
+定点类型用于存储精确的小数数据，通常用于财务和其他需要高精度计算的应用中。
+
+定点类型的特点：
+
+1. 定点类型数据是作为字符串存储的，并且不会出现舍入误差。
+2. 适用于存储需要精确的小数的数据，如货币、利率等。
+
+定点类型可以通过 `DECIMAL` 类型表示，与该类型等价于 `DEC`、`NUMERIC`、`FIXED` 这几种类型。`DECIMAL(M, D)`，M 表示数值的最大位数（包括小数点前后的数字），D 表示小数点后的位数。例如，`DECIMAL(5, 2)` 可以存储的数值范围是 -999.99 到 999.99。
 
 ## 日期时间类型
 
