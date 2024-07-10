@@ -22,5 +22,7 @@ export default defineConfig({
     sidebar,
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/luohuidong/website-notes' }],
+
+    outline: [2, 3]
   },
 })
