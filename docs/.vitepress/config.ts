@@ -23,6 +23,6 @@ export default defineConfig({
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/luohuidong/website-notes' }],
 
-    outline: [2, 3]
+    outline: [2, 3],
   },
 })

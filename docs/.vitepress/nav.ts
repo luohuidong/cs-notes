@@ -8,6 +8,7 @@ const nav: DefaultTheme.NavItem[] = [
       { text: '算法', link: '/cs/algorithm/sort/bubble-sort' },
       { text: 'leetcode', link: '/cs/leetcode/' },
       { text: '设计模式', link: '/cs/design-pattern/index' },
+      { text: '计算机组成原理', link: '/cs/computer-organization-and-architecture/index' },
     ],
   },
   {
