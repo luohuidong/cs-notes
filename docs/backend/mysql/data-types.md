@@ -12,9 +12,6 @@ MySQL 支持多种 SQL 数据类型，分别为：
 
 查阅 [Numeric Data Type Syntax](https://dev.mysql.com/doc/refman/8.4/en/numeric-type-syntax.html) 可以对所有的数字类型有大致的了解，并且能够了解数字类型的基本语法。
 
-- [位类型](https://dev.mysql.com/doc/refman/8.4/en/bit-type.html)
-  - `BIT`
-
 ### 整数类型
 
 [整数类型](https://dev.mysql.com/doc/refman/8.4/en/integer-types.html)有：`TINYINT`、`SMALLINT`、`MEDIUMINT`、`INT`、 `BIGINT`
