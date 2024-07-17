@@ -3,6 +3,8 @@
 - [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
 - 算法
   - [《Hello，算法》](https://www.hello-algo.com/)
+- 设计模式
+  - [《Design Patterns》](https://refactoring.guru/design-patterns)
 - 系统设计
   - [system-design-primer](https://github.com/donnemartin/system-design-primer)
   - 《数据密集型应用系统设计 [Designing Data-Intensive Applications]》
