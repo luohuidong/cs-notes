@@ -11,3 +11,4 @@
     - [《Designing Data-Intensive Application》DDIA 中文翻译](https://github.com/Vonng/ddia)
   - [System Design Interview](https://www.youtube.com/@SystemDesignInterview)
   - [搞定系统设计：面试敲开大厂的门](https://weread.qq.com/web/bookDetail/21632710813ab8719g010db3)
+- [Chrome Extension development](https://developer.chrome.com/docs/extensions)
