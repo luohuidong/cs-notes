@@ -29,7 +29,8 @@ const nav: DefaultTheme.NavItem[] = [
       { text: 'Linux', link: '/tools/linux/command-line-proxy' },
       { text: 'Shell Script', link: '/tools/shell-script/what-is-shell-script' },
       { text: 'Neovim', link: '/tools/neovim/install' },
-      { text: 'Windows', link: 'tools/windows/dev-environment' },
+      { text: 'Windows', link: '/tools/windows/dev-environment' },
+      { text: 'Git', link: '/tools/git/' },
     ],
   },
 ]
