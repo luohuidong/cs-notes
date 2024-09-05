@@ -1,6 +1,6 @@
 - text: Shell 脚本编程
   items:
-    - { text: 认识 Shell, link: ./what-is-shell }
+    - { text: 认识 Shell, link: ./index }
     - { text: 认识 Shell 脚本, link: ./what-is-shell-script }
     - { text: Shell 脚本执行方式, link: ./script-run-method }
     - { text: Shell 脚本的跟踪与调试（写作中）, link: ./debugger }
