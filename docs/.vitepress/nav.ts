@@ -31,6 +31,7 @@ const nav: DefaultTheme.NavItem[] = [
       { text: 'Neovim', link: '/tools/neovim/install' },
       { text: 'Windows', link: '/tools/windows/dev-environment' },
       { text: 'Git', link: '/tools/git/' },
+      { text: 'DevOps', link: '/tools/devops' },
     ],
   },
 ]
