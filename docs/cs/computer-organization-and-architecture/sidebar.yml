@@ -1,7 +1,0 @@
-- text: 计算机组成原理
-  items:
-    - { text: Overview, link: ./index }
-    - text: 计算机的算数
-      items:
-        - { text: 二进制编码, link: ./binary }
-        - { text: 定点数和浮点数, link: ./floating-point }

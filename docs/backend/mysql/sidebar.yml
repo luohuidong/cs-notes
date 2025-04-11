@@ -1,5 +1,0 @@
-- text: MySQL
-  items:
-    - { text: Overview, link: ./index.md }
-    - { text: 数据类型, link: ./data-types }
-    - { text: 存储引擎, link: ./storage-engines }

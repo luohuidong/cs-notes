@@ -1,8 +1,0 @@
-- text: 数据结构
-  items:
-    - text: 线性表
-      items:
-        - { text: 栈, link: ./liner-list/stack }
-        - { text: 队列, link: ./liner-list/queue }
-        - { text: 循环队列, link: ./liner-list/loop-queue }
-        - { text: 双端队列, link: ./liner-list/deque }

@@ -1,39 +1,8 @@
 # leetcode
 
-## 队列与栈
-
-- [155.最小栈](https://leetcode.cn/problems/min-stack/description/)
-- [225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/description/)
-- [232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/)
-- [1381. 设计一个支持增量操作的栈](https://leetcode.cn/problems/design-a-stack-with-increment-operation/description/)
-- [1441. 用栈操作构建数组](https://leetcode.cn/problems/build-an-array-with-stack-operations/description/)
-- [155. 最小栈](https://leetcode.cn/problems/min-stack/description/)
-
-### 栈
-
-- [20. 有效的括号](https://u.geekbang.org/lesson/457?article=604704)
-- [32. 最长有效括号](https://u.geekbang.org/lesson/457?article=604706)
-- [636. 函数的独占时间](https://leetcode.cn/problems/exclusive-time-of-functions/description/)
-
-### 队列
-
-## 二分查找
-
-- [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/description/)
-- [704. 二分查找](https://leetcode.cn/problems/binary-search/description/)
-
-## 递推
-
-- [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/description/)
-- [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/description/)
-
-## 动态规划
-
-- [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/description/)
-
-## 链表
-
-- [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/description/)
-- [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/description/)
-- [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/description/)
-- [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/)
+- 栈、队列
+  - [232. 用栈实现队列](./232.md)
+  - [225. 用队列实现栈](./225.md)
+  - [1381.设计一个支持增量操作的栈](./1381.md)
+  - [1441.用栈操作构建数组](./1441.md)
+  - [155. 最小栈](./155.md)

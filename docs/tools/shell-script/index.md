@@ -1,7 +1,35 @@
-# 认识 Shell
+# Shell 脚本编程
 
-Shell 是 linux 的命令解释器，Shell 会将用户输入的命令翻译给系统内核。系统内核接收到命令之后就会执行，当命令执行完毕之后，系统内核会将执行的结果返回 Shell，最后 Shell 再返回给用户，因此可以将 Shell 理解为用户与系统内核之间的桥梁。
-
-Shell 它给用户屏蔽了很多系统底层的细节，用户不用去开发驱动程序，不用去开发复杂的 C 语言程序，仅仅通过简单的命令就能去控制系统内核以及控制操作系统去做非常多的事情。
-
-Shell 有很多种，大多数 Shell 的功能都差不多，目前主流的 Linux 发行版本都将 Bash 作为默认 Shell。当我们想了解当前系统能使用什么 Shell 的时候，可以查看 `/etc/shells` 文件。
+- [认识 Shell](./overview.md)
+- [认识 Shell 脚本](./what-is-shell-script.md)
+- [Shell 脚本执行方式](./script-run-method.md)
+- [Shell 脚本的跟踪与调试（写作中）](./debugger.md)
+- [命令执行条件](./exec-condition.md)
+- 管道
+  - [管道](./pipe-redirection/pipe.md)
+  - [输出重定向](./pipe-redirection/stdout-redirect.md)
+  - [输入重定向（写作中）](./pipe-redirection/stdin-redirect.md)
+- 变量
+  - [使用 echo 输出内容](./variable/echo.md)
+  - [变量声明、赋值与取消](./variable/variable-define.md)
+  - [自定义变量的引用与作用范围](./variable/variable-ref-scoop.md)
+  - [环境变量（写作中）](./variable/env-variable.md)
+  - [环境变量配置文件（写作中）](./variable/env-variable-file.md)
+  - [shell 脚本预定义变量](./variable/special-variables.md)
+  - [位置变量（写作中）](./variable/position-variable.md)
+- [数组（写作中）](./array.md)
+- [转义与引用（写作中）](./escaping-reference.md)
+- [特殊字符（写作中）](./special-characters.md)
+- 判断
+  - [test 命令](./condition/test.md)
+  - [if 判断](./condition/if.md)
+  - [case...esac 判断](./condition/case.md)
+- 循环
+  - [for 循环](./loop/for.md)
+  - [while 循环与 until 循环](./loop/while-until.md)
+  - [break 和 continue](./loop/break-continue.md)
+- 函数
+  - [自定义函数](./function/function.md)
+  - [创建库](./function/lib.md)
+  - [数组变量与函数（写作中）](./function/arr-args.md)
+  - [系统函数库（写作中）](./function/system-lib.md)

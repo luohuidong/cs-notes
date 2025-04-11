@@ -1,7 +1,0 @@
-- text: 设计模式
-  items:
-    - { text: 设计模式, link: ./index }
-
-- text: 创建型
-  items:
-    - { text: 工厂模式, link: ./creational/factory }

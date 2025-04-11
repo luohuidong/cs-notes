@@ -1,3 +1,5 @@
 # 设计模式
 
-- [《Design Patterns》](https://refactoring.guru/design-patterns)
+- [资料](./material.md)
+- 创建型
+  - [工厂模式](./creational/factory.md)
