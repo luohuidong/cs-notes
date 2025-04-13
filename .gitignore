@@ -1,5 +1,6 @@
 node_modules
 docs/.vitepress/cache
 docs/.vitepress/sidebar.ts
+docs/.vitepress/nav.ts
 docs/.vitepress/dist
 *.png

@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "npm run build:sidebar && vitepress dev docs",
-    "dev:sidebar": "tsx ./scripts/generate-sidebar-watch.ts",
+    "dev:sidebar": "tsx ./scripts/generate-watch.ts",
     "build": "npm run build:sidebar && vitepress build docs",
-    "build:sidebar": "tsx ./scripts/generate-sidebar.ts",
+    "build:sidebar": "tsx ./scripts/generate.ts",
     "preview": "vitepress preview docs"
   },
   "keywords": [],
@@ -16,7 +16,7 @@
     "@swc/core": "^1.11.20",
     "@types/js-yaml": "^4.0.9",
     "@types/lodash": "^4.17.16",
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.14.1",
     "js-yaml": "^4.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "prettier": "3.5.3",

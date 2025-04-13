@@ -54,7 +54,8 @@ export class NoteSidebarGenerator {
 
       // 处理链接
       if (childTokens.length === 1) {
-        const tmpToken = (childTokens[0] as marked.Tokens.Text).tokens?.[0] as marked.Tokens.Link
+        const tmpToken = (childTokens[0] as marked.Tokens.Text)
+          .tokens?.[0] as marked.Tokens.Link
         linkItem.text = tmpToken.text
         linkItem.link = path.join(this.linkPrefix, tmpToken.href)
       }
@@ -83,13 +84,21 @@ export class SidebarGenerator {
     const sidebar: DefaultTheme.SidebarMulti = {}
 
     for (const filePath of this.tocFiles) {
-      const relativePath = path.relative(this.docsDirPath, path.dirname(filePath))
+      const relativePath = path.relative(
+        this.docsDirPath,
+        path.dirname(filePath)
+      )
 
       const key = `/${relativePath}`
       const sidebarItem = new NoteSidebarGenerator(key).parseTocFile(filePath)
       sidebar[key] = [sidebarItem]
     }
 
+    const code = await this.#generateCode(sidebar)
+    fs.writeFileSync(this.outputPath, code, 'utf-8')
+  }
+
+  #generateCode = (sidebar: DefaultTheme.SidebarMulti) => {
     const ast = parseSync(
       `import type { DefaultTheme } from 'vitepress';
 const sidebar: DefaultTheme.SidebarMulti = ${JSON.stringify(sidebar, null, 2)};
@@ -99,9 +108,7 @@ export default sidebar;`,
       }
     )
     const { code } = printSync(ast)
-
-    const formattedCode = await this.#formatCode(code)
-    fs.writeFileSync(this.outputPath, formattedCode, 'utf-8')
+    return this.#formatCode(code)
   }
 
   #formatCode = async (code: string) => {
