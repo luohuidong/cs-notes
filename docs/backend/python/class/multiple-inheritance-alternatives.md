@@ -117,7 +117,7 @@ print(dog.speak())
 # Buddy says Woof!
 ```
 
-示例：：为类添加权限控制
+示例：为类添加权限控制
 
 ```py
 class PermissionMixin:
