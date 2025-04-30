@@ -13,21 +13,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@swc/core": "^1.11.20",
+    "@swc/core": "^1.11.24",
     "@types/js-yaml": "^4.0.9",
     "@types/lodash": "^4.17.16",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.3",
     "js-yaml": "^4.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "prettier": "3.5.3",
-    "tsx": "^4.19.3",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitepress": "^1.6.3"
   },
   "dependencies": {
     "@types/marked": "^5.0.2",
-    "glob": "^11.0.1",
+    "glob": "^11.0.2",
     "lodash": "^4.17.21",
-    "marked": "^15.0.8"
+    "marked": "^15.0.11"
   }
 }
