@@ -8,6 +8,6 @@
   - [继承](./class/inheritance.md)
   - [多继承的替代方案](./class/multiple-inheritance-alternatives.md)
 - 模块
-  - [模块（写作中）](./module/module.md)
-  - [虚拟环境](./module/virtualenv.md)
+  - [模块](./module/module.md)
   - [包](./module/package.md)
+  - [虚拟环境](./module/virtualenv.md)
