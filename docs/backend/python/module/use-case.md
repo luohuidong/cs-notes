@@ -1,8 +1,8 @@
 # 使用场景
 
-## 标准库包的使用
+## 标准库的使用
 
-Python 提供了许多内置包，如 `os`、`sys`、`json`、`math` 等，标准库的包无需安装即可直接使用：
+Python 标准库是 Python 官方自带的一组模块和包，如 `os`、`sys`、`json`、`math` 等，标准库的包无需安装即可直接使用：
 
 ```python
 import math

@@ -10,4 +10,5 @@
 - 模块
   - [模块](./module/module.md)
   - [包](./module/package.md)
+  - [使用场景](./module/use-case.md)
   - [虚拟环境](./module/virtualenv.md)
