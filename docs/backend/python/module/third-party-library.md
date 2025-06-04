@@ -39,6 +39,8 @@ python -m pip install --upgrade requests
 python -m pip uninstall requests
 ```
 
+如果想创建和分享自己的包，可以参考 [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/) 文档。
+
 ## 虚拟环境
 
 `pip` 默认将第三方库装在全局环境。在全局环境下，同一个包只能有一个版本，这会导致不同的项目之间的库版本有可能存在冲突，因为不同的项目可能需要不同版本的同一个库。而为了解决这个问题，则可以使用 Python 提供的虚拟环境。虚拟环境是一种用于隔离项目依赖的工具，它为每一个项目创建独立的库安装环境。
@@ -67,3 +69,4 @@ deactivate
 
 - [Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
 - [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index)
+- [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
