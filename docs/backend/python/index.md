@@ -1,6 +1,5 @@
 # Python
 
-- [概览](./overview.md)
 - 函数
   - [参数（写作中）](./function/parameters.md)
   - [装饰器](./function/decorators.md)
