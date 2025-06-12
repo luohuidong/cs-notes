@@ -8,7 +8,6 @@
   - [继承](./class/inheritance.md)
   - [多继承的替代方案](./class/multiple-inheritance-alternatives.md)
 - 模块与包
-  - [概览](./module/overview.md)
   - [模块](./module/module.md)
   - [包](./module/package.md)
   - [第三方库](./module/third-party-library.md)
