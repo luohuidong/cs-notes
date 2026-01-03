@@ -1,5 +1,7 @@
 # 查询
 
+- [CS50’s Introduction to Databases with SQL - Querying](https://cs50.harvard.edu/sql/weeks/0/)
+
 ## SELECT 关键字
 
 获取 longlist 表的所有数据：
