@@ -1,6 +1,9 @@
 # 概览
 
-[CS50’s Introduction to Databases with SQL](https://cs50.harvard.edu/sql/)：哈佛 CS50 课程，非常好的数据库与SQL入门的课程。习网站还整理好课程的 slide，还有根据课程内容整理的 note，非常适合复习。
+- [CS50’s Introduction to Databases with SQL](https://cs50.harvard.edu/sql/)：哈佛 CS50 课程，非常好的数据库与SQL入门的课程。习网站还整理好课程的 slide，还有根据课程内容整理的 note，非常适合复习。
+- 《SQL 必知必会》：通俗易懂的 SQL 入门书籍，适合初学者。
+- 《数据库系统概念》：经典的数据库教材，内容全面，适合深入学习数据库系统原理。
+- [CS 4320 (and 5320): Introduction to Database Systems](https://www.cs.cornell.edu/courses/cs4320/2020fa/)
 
 Database、DBMS、SQL 是三个比较重要的概念：
 
