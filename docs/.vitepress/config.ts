@@ -1,14 +1,27 @@
-import { defineConfig } from 'vitepress'
-
 import nav from './nav'
 import sidebar from './sidebar.js'
 
+// Mermaid 支持
+import { withMermaid } from 'vitepress-plugin-mermaid'
+
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   title: 'Notes',
 
   markdown: {
     math: true,
+  },
+
+  // Mermaid 配置
+  mermaid: {
+    theme: 'default',
+    darkMode: true,
+    themeVariables: {
+      darkMode: true,
+    },
+  },
+  mermaidPlugin: {
+    class: 'mermaid',
   },
 
   themeConfig: {

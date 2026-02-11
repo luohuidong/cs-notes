@@ -19,10 +19,12 @@
     "@types/node": "^24.10.4",
     "js-yaml": "^4.1.1",
     "markdown-it-mathjax3": "^4.3.2",
+    "mermaid": "^11.12.2",
     "prettier": "3.5.3",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
   },
   "dependencies": {
     "@types/marked": "^5.0.2",
