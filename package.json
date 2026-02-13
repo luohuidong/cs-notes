@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@swc/core": "^1.15.7",
+    "@swc/core": "^1.15.11",
     "@types/js-yaml": "^4.0.9",
-    "@types/lodash": "^4.17.21",
-    "@types/node": "^24.10.4",
+    "@types/lodash": "^4.17.23",
+    "@types/node": "^24.10.13",
     "js-yaml": "^4.1.1",
     "markdown-it-mathjax3": "^4.3.2",
     "mermaid": "^11.12.2",
@@ -29,7 +29,7 @@
   "dependencies": {
     "@types/marked": "^5.0.2",
     "glob": "^11.1.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "marked": "^15.0.12"
   }
 }
