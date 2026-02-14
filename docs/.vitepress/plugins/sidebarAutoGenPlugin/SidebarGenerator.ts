@@ -76,9 +76,9 @@ export class NoteSidebarGenerator {
 }
 
 export class SidebarGenerator {
-  docsDirPath = path.resolve(__dirname, '../docs')
-  tocFiles = glob.sync(path.resolve(__dirname, '../docs/*/*/index.md'))
-  outputPath = path.resolve(__dirname, '../docs/.vitepress/sidebar.ts')
+  docsDirPath = path.resolve(__dirname, '../../../')
+  tocFiles = glob.sync(path.resolve(__dirname, '../../../*/*/index.md'))
+  outputPath = path.resolve(__dirname, '../../sidebar.ts')
 
   generate = async () => {
     const sidebar: DefaultTheme.SidebarMulti = {}
@@ -112,7 +112,7 @@ export default sidebar;`,
   }
 
   #formatCode = async (code: string) => {
-    const configFile = path.resolve(__dirname, '../.prettierrc')
+    const configFile = path.resolve(__dirname, '../../../.prettierrc')
     const options = await prettier.resolveConfig(configFile)
 
     const formattedCode = await prettier.format(code, {

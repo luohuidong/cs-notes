@@ -3,10 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npm run build:sidebar && vitepress dev docs",
-    "dev:sidebar": "tsx ./scripts/generate-watch.ts",
-    "build": "npm run build:sidebar && vitepress build docs",
-    "build:sidebar": "tsx ./scripts/generate.ts",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "keywords": [],

@@ -9,8 +9,8 @@ import type { DefaultTheme } from 'vitepress'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export class NavGenerator {
-  docsDirPath = path.resolve(__dirname, '../docs')
-  outputPath = path.resolve(__dirname, '../docs/.vitepress/nav.ts')
+  docsDirPath = path.resolve(__dirname, '../../../')
+  outputPath = path.resolve(__dirname, '../../nav.ts')
 
   nav: DefaultTheme.NavItem[] = []
 
@@ -21,6 +21,9 @@ export class NavGenerator {
   }
 
   #getNav = () => {
+    // 清空之前的 nav 数据
+    this.nav = []
+
     // 遍历二级目录，获取所有 nav 分组
     // 目录字符串长度为2，则全部大写。目录字符串长度大于2，则首字母大写
     const groups = fs
@@ -92,7 +95,7 @@ export default nav;`,
   }
 
   #formatCode = async (code: string) => {
-    const configFile = path.resolve(__dirname, '../.prettierrc')
+    const configFile = path.resolve(__dirname, '../../../.prettierrc')
     const options = await prettier.resolveConfig(configFile)
 
     const formattedCode = await prettier.format(code, {

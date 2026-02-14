@@ -1,5 +1,6 @@
 import nav from './nav'
 import sidebar from './sidebar.js'
+import { sidebarAutoGenPlugin } from './plugins/sidebarAutoGenPlugin/index.ts'
 
 // Mermaid 支持
 import { withMermaid } from 'vitepress-plugin-mermaid'
@@ -10,6 +11,10 @@ export default withMermaid({
 
   markdown: {
     math: true,
+  },
+
+  vite: {
+    plugins: [sidebarAutoGenPlugin()],
   },
 
   // Mermaid 配置
