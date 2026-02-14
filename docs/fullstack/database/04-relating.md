@@ -513,16 +513,16 @@ FULL JOIN books b ON a.id = b.author_id;
 ```
 INNER JOIN:          LEFT JOIN:
 ┌─────────┐          ┌─────────┐
-│  A ∩ B  │          │   A     │
-│  (交集) │          │ (A ∪ B  │
-└─────────┘          │ 的A部分)│
+│  A ∩ B  │          │    A    │
+│(Matched)│          │(All from│
+└─────────┘          │  Left)  │
                      └─────────┘
 
 RIGHT JOIN:          FULL JOIN:
 ┌─────────┐          ┌─────────┐
-│   B     │          │  A ∪ B  │
-│ (A ∪ B  │          │ (并集)  │
-│ 的B部分)│          │         │
+│    B    │          │  A ∪ B  │
+│(All from│          │ (Union) │
+│  Right) │          │         │
 └─────────┘          └─────────┘
 ```
 
