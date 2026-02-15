@@ -16,13 +16,15 @@ export class NoteSidebarGenerator {
     this.linkPrefix = linkPrefix
   }
 
-  parseTocFile = (filePath: string) => {
+  /**
+   * 将目录下的 index.md 解析成侧边栏数据结构
+   * @param filePath
+   * @returns
+   */
+  parseTocFile = (filePath: string): DefaultTheme.SidebarItem => {
     const markdown = fs.readFileSync(filePath, 'utf-8')
     const tokens = marked.lexer(markdown)
-    return this.#convertToSidebar(tokens)
-  }
 
-  #convertToSidebar = (tokens: marked.TokensList): DefaultTheme.SidebarItem => {
     const sidebarItem: DefaultTheme.SidebarItem = {
       text: '',
       items: [],
@@ -42,6 +44,11 @@ export class NoteSidebarGenerator {
     return sidebarItem
   }
 
+  /**
+   * 将 markdown 列表解析成侧边栏数据结构，支持多层嵌套
+   * @param list
+   * @returns
+   */
   #processList = (list: marked.Tokens.List): DefaultTheme.SidebarItem[] => {
     const sidebarItem: DefaultTheme.SidebarItem[] = []
 
@@ -76,14 +83,18 @@ export class NoteSidebarGenerator {
 }
 
 export class SidebarGenerator {
-  docsDirPath = path.resolve(__dirname, '../../../')
-  tocFiles = glob.sync(path.resolve(__dirname, '../../../*/*/index.md'))
-  outputPath = path.resolve(__dirname, '../../sidebar.ts')
+  docsDirPath = path.resolve(__dirname, '..', 'docs/')
 
   generate = async () => {
     const sidebar: DefaultTheme.SidebarMulti = {}
+    const tocFiles = glob.sync(path.resolve(this.docsDirPath, '*/*/index.md'))
+    const outputPath = path.resolve(
+      this.docsDirPath,
+      '.vitepress',
+      'sidebar.ts'
+    )
 
-    for (const filePath of this.tocFiles) {
+    for (const filePath of tocFiles) {
       const relativePath = path.relative(
         this.docsDirPath,
         path.dirname(filePath)
@@ -95,7 +106,7 @@ export class SidebarGenerator {
     }
 
     const code = await this.#generateCode(sidebar)
-    fs.writeFileSync(this.outputPath, code, 'utf-8')
+    fs.writeFileSync(outputPath, code, 'utf-8')
   }
 
   #generateCode = (sidebar: DefaultTheme.SidebarMulti) => {

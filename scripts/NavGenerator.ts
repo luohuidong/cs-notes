@@ -9,8 +9,9 @@ import type { DefaultTheme } from 'vitepress'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export class NavGenerator {
-  docsDirPath = path.resolve(__dirname, '../../../')
-  outputPath = path.resolve(__dirname, '../../nav.ts')
+  docsDirPath = path.resolve(__dirname, '..', 'docs')
+  outputPath = path.resolve(this.docsDirPath, '.vitepress', 'nav.ts')
+  prettierConfigPath = path.resolve(__dirname, '..', '.prettierrc')
 
   nav: DefaultTheme.NavItem[] = []
 
@@ -20,6 +21,9 @@ export class NavGenerator {
     fs.writeFileSync(this.outputPath, code, 'utf-8')
   }
 
+  /**
+   * 获取 nav 数据结构
+   */
   #getNav = () => {
     // 清空之前的 nav 数据
     this.nav = []
@@ -64,6 +68,11 @@ export class NavGenerator {
     }
   }
 
+  /**
+   * 获取文件的标题
+   * @param filePath 文件路径
+   * @returns 文件标题
+   */
   #getFileTitle = (filePath: string) => {
     const fileContent = fs.readFileSync(filePath, 'utf-8')
     const tokens = marked.lexer(fileContent)
@@ -81,6 +90,10 @@ export class NavGenerator {
     return title
   }
 
+  /**
+   * 生成 nav 代码
+   * @returns 生成的代码字符串
+   */
   #generateCode = () => {
     const ast = parseSync(
       `import type { DefaultTheme } from 'vitepress';
@@ -95,8 +108,7 @@ export default nav;`,
   }
 
   #formatCode = async (code: string) => {
-    const configFile = path.resolve(__dirname, '../../../.prettierrc')
-    const options = await prettier.resolveConfig(configFile)
+    const options = await prettier.resolveConfig(this.prettierConfigPath)
 
     const formattedCode = await prettier.format(code, {
       ...options,

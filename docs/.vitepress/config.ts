@@ -1,6 +1,6 @@
 import nav from './nav'
 import sidebar from './sidebar.js'
-import { sidebarAutoGenPlugin } from './plugins/sidebarAutoGenPlugin/index.ts'
+import { sidebarAutoGenPlugin } from './plugins/autoGenSidebarAndNav.ts'
 
 // Mermaid 支持
 import { withMermaid } from 'vitepress-plugin-mermaid'
@@ -39,7 +39,9 @@ export default withMermaid({
 
     sidebar,
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/luohuidong/website-notes' }],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/luohuidong/website-notes' },
+    ],
 
     outline: [2, 3],
   },

@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "dev": "npm run gen-sidebar-and-nav && vitepress dev docs",
+    "build": "npm run gen-sidebar-and-nav && vitepress build docs",
+    "gen-sidebar-and-nav": "tsx ./scripts/gen-sidebar-and-nav.ts",
     "preview": "vitepress preview docs"
   },
   "keywords": [],
